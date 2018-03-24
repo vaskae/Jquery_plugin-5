@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Body background example</title>
+  <style>
+      .contain-body{
+          
+           margin-top:-25px; 
+         
+          font-size: 24px;
+          color: white;
+          
+      }
+      h1{
+          
+          text-align: center;
+          padding-top: 10%
+      }
+     .contain-body button{
+         position:absolute;
+         left: 0;
+         right: 0;
+         margin: 0 44%;
+      
+          background: none;
+          padding: 10px 20px; 
+          border: 3px solid white; 
+          border-radius: 5px;
+          font-size: 24px;
+          color: white;
+         
+      }
+    @media(max-width:767px){
+        .contain-body button{
+            margin: 0 35%;
+        }
+        
+        
+      }
+     button:hover{
+          
+          background: white;
+          color: black;
+      }
+    
+    </style>
+</head>
+   <body>
+    <div style="width: 100%; height: 500px;" data-vide-bg="video/ocean">
+   <div class="contain-body">
+      <h1>Background Video</h1>
+       <button >Download</button>
+   </div>
+    
+     
+    </div>
+    
+    
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
+<script>
+ // $(document).ready(function () {
+ //   $(document.body).vide('video/ocean'); // Non declarative initialization
+ //
+ //   var instance = $(document.body).data('vide'); // Get the instance
+ //   var video = instance.getVideoObject(); // Get the video object
+ //   instance.destroy(); // Destroy instance
+ // });
+</script>
+
+
+
+</body>
+</html>
+
